@@ -3,7 +3,7 @@
 namespace App\Mail;
 
 use Carbon\Traits\Serialization;
-use illuminate\Bus\Queueable;
+use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
