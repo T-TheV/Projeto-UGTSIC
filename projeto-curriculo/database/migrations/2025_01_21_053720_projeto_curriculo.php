@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 return new class extends Migration
 {
@@ -18,7 +19,7 @@ return new class extends Migration
             $table->string('telefone');
             $table->string('cargo_desejado');
             $table->string('escolaridade');
-            $table->text('observacoes');
+            $table->text('observacoes')->nullable();
             $table->string('arquivo');
             $table->string('ip');
             $table->timestamps();
