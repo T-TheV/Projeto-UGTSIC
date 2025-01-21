@@ -49,6 +49,7 @@
                 <p><strong>Cargo Desejado:</strong> {{ $data['cargo_desejado'] }}</p>
                 <p><strong>Escolaridade:</strong> {{ $data['escolaridade'] }}</p>
                 <p><strong>Observações:</strong> {{ $data['observacoes'] ?? 'Nenhuma observação' }}</p>
+                <p><strong>Ip:</strong> {{ $data['ip']}}</p>
         </div>
         <div class="footer">
             <p>Este é um e-mail automático. Não responda.</p>
