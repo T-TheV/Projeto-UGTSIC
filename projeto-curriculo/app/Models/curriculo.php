@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Factories\hasFactory;
 class curriculo extends Model
 {
     use hasFactory;
+
+    protected $table = 'curriculo'; 
     protected $fillable = [
         'nome',
         'email',
