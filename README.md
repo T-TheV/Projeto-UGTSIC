@@ -1,6 +1,6 @@
----
+`---
 
-# Sistema de Cadastro e Envio de Currículos 📄
+## Sistema de Cadastro e Envio de Currículos 📄
 
 ## 📋 Sobre o Projeto
 Este projeto é uma aplicação web para cadastro e envio de currículos. Ele permite:
@@ -12,13 +12,12 @@ Este projeto é uma aplicação web para cadastro e envio de currículos. Ele pe
 Este projeto foi desenvolvido utilizando **Laravel** no backend, com design responsivo utilizando **Bootstrap** no frontend.
 
 ---
----
+
 ## Teste Demonstrativo
 Acesse o site [Projeto Curriculo](https://davidwebdev.tech/) e poderá simular um registro, envio de curriculo e login. 
 
 ---
 
----
 ## 🚀 Funcionalidades
 1. Formulário de envio de currículos com os seguintes campos:
    - Nome (Obrigatório)
