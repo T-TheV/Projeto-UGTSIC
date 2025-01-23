@@ -56,7 +56,7 @@
             <h2 class="text-center text-dark">Envio de Currículos</h2>
             <p class="text-center text-muted">Preencha o formulário abaixo para enviar seu currículo.</p>
             @if(session('sucesso'))
-                <div class="alert alert-success is-valid p-2"
+                <div class="alert alert-'success' is-valid p-2"
                     style="border: 1px solid #198754; box-shadow: 0 0 5px #198754; border-radius: 5px;">
                     {{ session('sucesso') }}
                 </div>

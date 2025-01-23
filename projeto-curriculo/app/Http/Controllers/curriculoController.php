@@ -25,7 +25,7 @@ class curriculoController extends Controller
             'telefone' => 'required|string',
             'cargo_desejado' => 'required|string',
             'escolaridade' => 'required|string',
-            'observacoes' => 'required|string',
+            //'observacoes' => 'required|string',
             'arquivo' => 'required|mimes:pdf,doc,docx|max:1024', // 1mb
         ]);
 
