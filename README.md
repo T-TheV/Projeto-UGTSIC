@@ -13,6 +13,11 @@ Este projeto foi desenvolvido utilizando **Laravel** no backend, com design resp
 
 ---
 
+## Teste Demonstrativo
+Acesse o site [Projeto Curriculo](https://davidwebdev.tech/) e poderá simular um registro, envio de curriculo e login. 
+
+---
+
 ## 🚀 Funcionalidades
 1. Formulário de envio de currículos com os seguintes campos:
    - Nome (Obrigatório)
@@ -174,3 +179,7 @@ Após configurar, o envio de e-mails será automático.
 **GitHub:** [T-TheV](https://github.com/T-TheV)  
 
 ---
+
+## 📃 Licença
+
+Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
