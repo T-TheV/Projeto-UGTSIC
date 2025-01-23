@@ -12,12 +12,13 @@ Este projeto é uma aplicação web para cadastro e envio de currículos. Ele pe
 Este projeto foi desenvolvido utilizando **Laravel** no backend, com design responsivo utilizando **Bootstrap** no frontend.
 
 ---
-
+---
 ## Teste Demonstrativo
 Acesse o site [Projeto Curriculo](https://davidwebdev.tech/) e poderá simular um registro, envio de curriculo e login. 
 
 ---
 
+---
 ## 🚀 Funcionalidades
 1. Formulário de envio de currículos com os seguintes campos:
    - Nome (Obrigatório)
@@ -159,16 +160,25 @@ Após configurar, o envio de e-mails será automático.
 ---
 
 ## 📸 Imagens do funcionamento do sistema
-1. ![Registro de Usuário](https://imgur.com/oKXjkPh.png)
-2. ![Login do Usuário](https://imgur.com/okX9m0P.png)
-3. ![Preenchimento de dados pro Curriculo](https://imgur.com/AZweJfE.png)
-4. ![Tela atualizada após envio com a edição](https://imgur.com/XIiiMtw.png)
-5. ![Email pro usuário ao enviar curriculo](https://imgur.com/GBtqpu1.png)
-6. ![Email pro administrador ao receber curriculo](https://imgur.com/oiTsvGn.png)
-7. ![Curriculo Aprovado](https://imgur.com/ORwtN3P.png)
-8. ![Curriculo Recusado](https://imgur.com/mvykPwv.png)
-9. ![Painel ADM para analise](https://imgur.com/U1zHeWV.png)
-10. ![Painel ADM após aprovar](https://imgur.com/QzfnifW.png)
+1. Registro de Usuário![Registro de Usuário](https://imgur.com/oKXjkPh.png)
+
+2. Login do Usuário![Login do Usuário](https://imgur.com/okX9m0P.png)
+
+3. Preenchimento de dados pro Curriculo![Preenchimento de dados pro Curriculo](https://imgur.com/AZweJfE.png)
+
+4. Tela atualizada após envio com a edição![Tela atualizada após envio com a edição](https://imgur.com/XIiiMtw.png)
+
+5. Email pro usuário ao enviar curriculo![Email pro usuário ao enviar curriculo](https://imgur.com/GBtqpu1.png)
+
+6. Email pro administrador ao receber curriculo![Email pro administrador ao receber curriculo](https://imgur.com/oiTsvGn.png)
+
+7. Curriculo Aprovado![Curriculo Aprovado](https://imgur.com/ORwtN3P.png)
+
+8. Curriculo Recusado![Curriculo Recusado](https://imgur.com/mvykPwv.png)
+
+9. Painel ADM para analise![Painel ADM para analise](https://imgur.com/U1zHeWV.png)
+
+10. Painel ADM após aprovar![Painel ADM após aprovar](https://imgur.com/QzfnifW.png)
 
 ---
 
