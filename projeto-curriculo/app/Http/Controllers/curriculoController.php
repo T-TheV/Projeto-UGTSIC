@@ -12,8 +12,21 @@ use App\Models\curriculo;
 
 class curriculoController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        $curriculo = Curriculo::where('email', $request->user()->email)->first();
+
+        if ($curriculo) {
+
+            if (in_array($curriculo->status, ['aprovado', 'recusado'])) {
+                return view('formulario_visualizar', compact('curriculo'));
+            }
+
+
+            return view('formulario_editar', compact('curriculo'));
+        }
+
+
         return view('formulario');
     }
 
@@ -59,4 +72,38 @@ class curriculoController extends Controller
         return redirect('/')
             ->with('sucesso', value: 'Currículo enviado com sucesso! Enviando uma cópia para o e-mail informado!');
     }
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'telefone' => 'required|string',
+            'cargo_desejado' => 'required|string',
+            'escolaridade' => 'required|string',
+            'arquivo' => 'nullable|mimes:pdf,doc,docx|max:1024',
+        ]);
+
+        $curriculo = Curriculo::findOrFail($id);
+
+        $curriculo->nome = $request->nome;
+        $curriculo->telefone = $request->telefone;
+        $curriculo->cargo_desejado = $request->cargo_desejado;
+        $curriculo->escolaridade = $request->escolaridade;
+        $curriculo->observacoes = $request->observacoes;
+
+        if ($request->hasFile('arquivo')) {
+
+            Storage::disk('public')->delete($curriculo->arquivo);
+
+            $fileName = time() . '_' . $request->file('arquivo')->getClientOriginalName();
+            $filePath = $request->file('arquivo')->storeAs('curriculo', $fileName, 'public');
+            $curriculo->arquivo = $filePath;
+        }
+
+        $curriculo->save();
+
+        return redirect('/')->with('successo', 'Currículo atualizado com sucesso!');
+    }
+
+
 }
+

@@ -19,8 +19,17 @@ return new class extends Migration
             $table->string('cargo_desejado');
             $table->string('escolaridade');
             $table->text('observacoes')->nullable();
+            $table->string('status')->default('pendente'); 
             $table->string('arquivo');
             $table->string('ip');
+            $table->timestamps();
+        });
+
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
             $table->timestamps();
         });
 

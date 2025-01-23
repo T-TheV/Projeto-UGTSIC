@@ -115,6 +115,10 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Enviar</button>
             </form>
+            <form action="{{ route('logout') }}" method="POST" class="mt-3">
+                @csrf
+                <button type="submit" class="btn btn-danger w-100">Logout</button>
+            </form>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
