@@ -39,7 +39,7 @@ class RegistroController extends Controller
             'password' => Hash::make($validatedData['password']), 
         ]);
 
-        return redirect()->route('registro')->with('successo', 'Usuário registrado com sucesso!');
+        return redirect()->route('login')->with('sucesso', 'Usuário registrado com sucesso!');
     }
 }
 

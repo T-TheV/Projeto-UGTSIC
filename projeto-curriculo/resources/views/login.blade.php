@@ -24,6 +24,9 @@
                                 </ul>
                             </div>
                         @endif
+                        @if(session('sucesso'))
+                            <div class="alert alert-success">{{ session('sucesso') }}</div>
+                        @endif
 
                         <form action="{{ route('authenticate') }}" method="POST">
                             @csrf
